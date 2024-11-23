@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Post</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <h1>Quora Post</h1>
+    <h2>Edit your post</h2>
+    <p>
+        Post id: <%= post.id %>
+    </p>
+    <p>
+        Post username: @<%= post.username %>
+    </p>
+
+    <form method="POST" action="/posts/<%= post.id%>?_method=PATCH">
+
+        <textarea rows="10" cols="40" type="text" placeholder="Write your post"
+            name="content"><%= post.content  %></textarea>
+        <br>
+        <br>
+        <button>Edit Post</button>
+    </form>
+
+</body>
+
+</html>

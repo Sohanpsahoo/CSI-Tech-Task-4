@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Submitted Ideas</title>
+</head>
+<body>
+    <div class="container">
+        <h1><%= heading %></h1> <!-- This will display the dynamic heading -->
+        
+        <% if (ideas.length > 0) { %>
+            <% ideas.forEach((idea, index) => { %>
+                <div class="idea-container">
+                    <span class="idea-number"><%= index + 1 %>.</span>
+                    <strong><%= idea.name %></strong> (<%= idea.email %>): <%= idea.description %>
+                </div>
+            <% }) %>
+        <% } else { %>
+            <p>No ideas submitted yet.</p>
+        <% } %>
+        
+        <a href="/ideas/new" class="submit-button">Submit Another Idea</a> <!-- Button to submit another idea -->
+    </div>
+    <script src="/js/app.js"></script>
+</body>
+</html>

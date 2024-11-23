@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>CSI TechSparks Event</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to TechSparks!!</h1> <!-- Main heading -->
+        <h2>Submit Your Innovative Ideas here !!</h2> <!-- Subheading -->
+        <form action="/ideas" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" name="email" required>
+            
+            <label for="description">Your Startup/Product Idea Description:</label>
+            <textarea name="description" required></textarea>
+            
+            <button type="submit" class="submit-button">Submit Idea</button>
+        </form>
+        <a href="/ideas/admin" class="view-ideas-button">View Submitted Ideas</a> <!-- Link to admin route -->
+    </div>
+    <script src="/js/app.js"></script>
+</body>
+</html>
