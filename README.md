@@ -10,6 +10,7 @@ Set Up Instructions:
  
  My solution to the task 4 is a web application built with Node.js and Express that allows users to submit and view innovative ideas.
  Key Components:
+ 
  1.Frontend:
  HTML/CSS for styling the layout and JavaScript for handling user interactions (e.g., clicking on posts).
  
@@ -25,7 +26,10 @@ Set Up Instructions:
 Here , EJS (Embedded JavaScript) files are used to:
 
 1.Render Dynamic Content: Generate HTML pages with embedded JavaScript.
+
 2.Separate Logic and Presentation: Keep server logic distinct from HTML.
+
 3.Inject Data: Pass data from the server to templates for display.
+
 4.Reuse Components: Create reusable HTML components for consistency.
 
